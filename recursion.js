@@ -5,7 +5,9 @@
 // It's very important that you have a way to stop the recursion otherwise you'll get an infinite loop and break all the things. 
 // Recursion is great when you have a variable depth, like a nesting objects, and/or the amount of looping needed is variable/unknown.
 
-// -----------------
+// =============================
+// Javascript code for recursion
+// =============================
 
 let factorial = (n) => {
   if (n === 1) return 1;
@@ -33,3 +35,5 @@ let computeMaxCallStackSize = () => {
     return 1;
   }
 }
+
+// -----------------

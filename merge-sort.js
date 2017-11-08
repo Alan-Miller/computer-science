@@ -2,7 +2,18 @@
 // MERGE SORT
 // ==========
 
-// This sorting algorithm is based on the idea that you can merged two perfectly sorted arrays to result into one perfectly sorted array. Merge sort is a fairly quick sorting algorithm, however, efficiency can be lost because it uses more memory than other algorithms like quick sort. 
+// This sorting algorithm is based on the idea that you can merged two perfectly sorted arrays to result into one perfectly sorted array. Merge sort is a fairly quick sorting algorithm, however, efficiency can be lost because it uses more memory than other algorithms like quick sort.
+// It works by taking an array and splitting it in half over and over again until you only have a single element in an array. Now that you only have one element, you know that that element is perfectly sorted and can start merging the arrays back together.
+// When merging back together, you will compare the first item in each array, whatever is lesser will be pushed to a new array. You will again compare the first element in each array and push the one of lesser value to the new array. Repeat this until one or both of the arrays are empty. If there are any remainders when one array is empty, you know it's already been sorted and is already greater in value so you can just push the rest of the contents to the new array.  
+
+// An example of the break down.
+//         [2, 5, 7, 3, 8, 4, 1, 6]
+//             /              \
+//     [2, 5, 7, 3]        [8, 4, 1, 6]
+//       /      \            /      \
+//  [2, 5]     [7, 3]   [8, 4]      [1, 6]
+//   /  \       /  \     /  \        /  \
+// [2]  [5]   [7]  [3] [8]  [4]    [1]   [6]
 
 // ========
 // THE CODE
